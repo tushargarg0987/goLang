@@ -33,4 +33,14 @@ func main(){
 
     fmt.Println(messages)
 
+	// Used Sprintf to format the message
+	for _,name := range names{
+		fmt.Println(fmt.Sprintf("The greeting for %v is : %v",name,messages[name]))
+	}
+	
+	// Printf can format the string directly 
+	for _,name := range names{
+		fmt.Printf("The greeting for %v is : %v\n",name,messages[name])
+	}
+
 }
